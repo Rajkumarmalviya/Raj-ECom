@@ -6,7 +6,6 @@ import { FaPinterest } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { SlHandbag } from "react-icons/sl";
 
-import ReactCountryFlagsCurrencySelect from "react-country-flag-currency-picker";
 import { Link } from "react-router-dom";
 export default function UpperHeader(props) {
   const [country, setCountry] = useState("");
