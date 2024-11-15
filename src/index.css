@@ -1,0 +1,1617 @@
+/* css for our body */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --announcement-text-size: 15px;
+  --main-family: "Neuzeit Office", sans-serif;
+  --main-weight: 400;
+  --main-style: normal;
+  --nav-family: "Neuzeit Office", sans-serif;
+  --nav-weight: 400;
+  --nav-style: normal;
+  --heading-family: "Neuzeit Office", sans-serif;
+  --heading-weight: 700;
+  --heading-style: normal;
+  --font-size: 15px;
+  --h1-size: 29px;
+  --h2-size: 26px;
+  --h3-size: 22px;
+  --nav-size: 15px;
+  --announcement-background: #393939;
+  --announcement-text: #ffffff;
+  --header-background: #ffffff;
+  --header-text: #000000;
+  --nav-color: #000000;
+  --nav-hover-link-color: #515151;
+  --nav-hover-accent-color: #9f9070;
+  --nav-dropdown-text: #000000;
+  --nav-dropdown-background: #ffffff;
+  --mobile-header-background: #ffffff;
+  --mobile-header-text: #000000;
+  --background: #ffffff;
+  --text-color: #000000;
+  --sale-color: #eba1b8;
+  --so-color: #f4cd6f;
+  --new-color: #000000;
+  --dotted-color: #d5d5d5;
+  --review-stars: #f4cd6f;
+  --secondary-color: #ffffff;
+  --section-heading-text: #393939;
+  --section-heading-primary: #ffffff;
+  --section-heading-primary-hover: #ffffff;
+  --section-heading-accent: #9f9070;
+  --banner-text: #ffffff;
+  --banner-caption-bg: rgba(0, 0, 0, 0);
+  --button-color: #393939;
+  --button-text: #ffffff;
+  --button-hover: #000000;
+  --secondary-button-color: #d5d5d5;
+  --secondary-button-text: #000000;
+  --secondary-button-hover: #d6d6d6;
+  --direction-color: #9f9070;
+  --direction-background: #ffffff;
+  --direction-hover: #ffffff;
+  --swatch-color: #000000;
+  --swatch-background: #ffffff;
+  --swatch-border: #d5d5d5;
+  --swatch-selected-color: #ffffff;
+  --swatch-selected-background: #000000;
+  --swatch-selected-border: #000000;
+  --footer-background: #ffffff;
+  --footer-text: #000000;
+  --footer-icons: #000000;
+  --header-border-width: 10%;
+  --header-border-weight: 3px;
+  --header-border-style: solid;
+  --free-shipping-bg: #9f9070;
+  --free-shipping-text: #fff;
+  --keyboard-focus: rgba(0, 0, 0, 0);
+  --focus-border-style: dotted;
+  --focus-border-weight: 2px;
+  --error-msg-dark: #e81000;
+  --error-msg-light: #ffeae8;
+  --success-msg-dark: #007f5f;
+  --success-msg-light: #e5fff8;
+  --select-arrow-bg: url(//mr-parker.myshopify.com/cdn/shop/t/56/assets/select-arrow.png?v=1125959…);
+  --icon-border-color: #e6e6e6;
+  --product-align: center;
+  --color-body-text: var(--text-color);
+  --color-body: var(--background);
+  --color-bg: var(--background);
+  --color-filter-size: 18px;
+  --star-active: rgb(0, 0, 0);
+  --star-inactive: rgb(204, 204, 204);
+  --section-background: #ffffff;
+  --section-overlay-color: 0, 0, 0;
+  --section-overlay-opacity: 0;
+  --section-button-size: 15px;
+  --desktop-section-height: ;
+  --mobile-section-height: ;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6 {
+  color: var(--text-color);
+  font-family: var(--heading-family);
+  font-weight: var(--heading-weight);
+  font-style: var(--heading-style);
+  letter-spacing: 0.075em;
+  margin-top: 0;
+  line-height: initial;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+
+h1,
+.h1 {
+  font-size: var(--h1-size);
+}
+
+h2,
+.h2 {
+  font-size: var(--h2-size);
+}
+
+h3,
+.h3 {
+  font-size: var(--h3-size);
+}
+
+h4,
+.h4 {
+  font-size: calc(var(--font-size) + 2px);
+}
+
+h5,
+.h5 {
+  font-size: calc(var(--font-size) + 1px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: disc inside;
+}
+
+a:visited {
+  /* color: var(--text-color); */
+  text-decoration: none;
+  outline: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:focus-visible {
+  outline: 1px dotted #79160d;
+  outline: 0;
+}
+
+/* a:hover {
+  color: var(--text-color);
+  outline: 0;
+} */
+
+img {
+  max-width: 100%;
+  border: 0;
+  height: unset;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+textarea {
+  min-height: 120px;
+  width: 100%;
+  line-height: 22px;
+  text-indent: 0;
+  padding: 10px 0 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.announcement__bar--icons .icon--facebook:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-size: var(--nav-size);
+  font-family: var(--nav-family);
+  font-weight: var(--nav-weight);
+  font-style: var(--nav-style);
+}
+
+.cart-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inline-wrapper {
+  list-style: none;
+  width: 100%;
+}
+
+.country-selector {
+  width: auto;
+  height: 300px;
+  position: absolute;
+  overflow-y: auto;
+  z-index: 50;
+  margin: 0 5px 0 0;
+}
+
+.announcement-bar {
+  padding: 0.5% 0%;
+}
+
+.announcement-bar > span {
+  font-size: var(--nav-size);
+}
+
+.cart-button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* youtube icon */
+.announcement__bar--icons .icon--youtube:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* pintrest icon */
+.announcement__bar--icons .icon--pinterest:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* instagram  icon*/
+.announcement__bar--icons .icon--instagram:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* facebook icon */
+.announcement__bar--icons .icon--facebook:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* drop down icon */
+.icon--apollo-down-carrot:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* cart icon  */
+.announcement-bar__cart-links-container .icon--mrparker-bag:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+/* acount login icon */
+.announcement-bar__cart-links-container .icon--mrparker-user:hover .hover-fill {
+  fill: var(--announcement-text);
+}
+
+.header-wrapper {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--main-family);
+  font-weight: var(--main-weight);
+  font-style: var(--main-style);
+  width: 100%;
+  z-index: 10;
+}
+
+/* .active{
+ 
+} */
+.navigation-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* .topbar{
+  position: sticky;
+  top: 0;
+} */
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.span-2 {
+  grid-column: auto / span 2;
+}
+
+.logo {
+  /* margin-left: 10px; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+.navigation-ul {
+  align-self: center;
+} 
+
+.announcement-bar {
+  text-align: center;
+
+  background-color: var(--section-heading-accent);
+}
+
+.announcement-text {
+  font-size: 14px;
+  color: var(--banner-text);
+
+  font-family: var(--main-family);
+  font-style: var(--main-style);
+}
+
+.logo-img {
+  height: 24px;
+  width: 179px;
+}
+/* this is css for shop navigation */
+.shop-navigation-main-div {
+  padding: 3%;
+}
+.sub-ul {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size) !important;
+  color: var(--nav-dropdown-text) !important;
+  line-height: inherit;
+  padding-top: 8px;
+  margin-bottom: 0px;
+}
+
+.link {
+  font-size: 14px;
+  font-family: var(--nav-family);
+  color: var(--nav-color);
+  font-weight: var(--nav-weight);
+  font-style: var(--nav-style);
+  padding: 4px 15px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box-ratio {
+  display: block;
+  /* height: 0; */
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.main-images {
+  height: var(--desktop-section-height);
+}
+
+.main-img {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-ratio {
+  display: block;
+  position: relative;
+  height: var(--desktop-section-height);
+  /* width: 100%;
+  height: 50%; */
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.slide-show-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+
+@keyframes main-fram {
+  from{bottom: 20%; opacity: 0;}
+  to{bottom: 50%; opacity: 1;}
+  
+}
+
+.caption-container {
+  animation: main-fram  ease-in-out  ;
+  animation-duration: 5.8s;
+  /* animation-delay: 0.5s; */
+animation-iteration-count: infinite;
+ background: rgba(0, 0, 0, 0.377);
+ 
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* transform: translate(-50%, -50%); */
+  width: 50%;
+  height: 32%;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  /* transition: opacity 1s ease-in-out; */
+  opacity: 1;
+}
+
+.heading-text-main-slider {
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  animation: fadeInUp 1s ease-in-out 1s forwards;
+  font-size: calc(var(--h2-size) * 2);
+  font-family: var(--heading-family);
+  font-weight: var(--heading-weight);
+  font-style: var(--heading-style);
+  letter-spacing: 0.075em;
+  line-height: initial;
+}
+
+.sub-heading-text-main-slider {
+  color: #ffffff;
+  animation: fadeInUp 1s ease-in-out 1s forwards;
+  font-family: var(--heading-family);
+  font-weight: var(--heading-weight);
+  font-style: var(--heading-style);
+  letter-spacing: 0.075em;
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+.div-btn-main-slider {
+  animation: fadeInUp 1s ease-in-out 1s forwards;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  font-size: var(--section-button-size);
+  font-style: var(--main-style);
+  font-family: var(--main-family);
+}
+
+.flag-select__options {
+  height: 70%;
+  width: 20%;
+  padding: 1%;
+  text-align: justify;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 200;
+  background: var(--announcement-background);
+}
+.flag-select__option__icon {
+  height: auto;
+  width: 10%;
+  border-radius: 3px;
+}
+
+.flag-select__btn {
+  font-size: var(--font-size);
+  font-style: var(--main-style);
+  font-family: var(--main-family);
+
+  border: none;
+  color: white;
+  background: var(--announcement-background);
+}
+
+.scrolling-text-inner {
+  color: #ffffff;
+  background: var(--section-heading-text);
+  padding: 15px 0;
+  opacity: 1;
+  display: flex;
+  gap: 4px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+
+.scrolling-text-item {
+  padding: 0 30px;
+}
+
+.scrolling-text-container{
+font-size: var(--font-size);
+font-weight: var(--main-weight);
+font-family: var(--main-family);
+font-style: var(--main-style);
+}
+
+.scrolling-text-container:hover .scrolling-text-inner  {
+  animation-play-state: paused;
+}
+
+/* .scrolling-text-inner > div {
+  animation: scroll-left 20s linear infinite;
+} */
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main-ul {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.list-heading {
+  font-size: calc(var(--font-size)+1px);
+  color: var(--nav-dropdown-text) !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  line-height: inherit;
+}
+.collection-image-component {
+  padding: 2% 8% 2% 8%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+}
+.collection-img {
+  height: auto;
+  width: 100%;
+}
+.img-component {
+  padding: 6%;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--nav-dropdown-text);
+}
+.img-component > p {
+  font-size: var(--font-size) !important;
+  text-decoration: none;
+}
+
+.collection-img-main {
+  height: unset;
+  width: 100%;
+}
+
+.collection-div-main {
+  margin-top: 3%;
+  padding: 0 1.04166667%;
+  display: flex;
+  justify-content: center;
+}
+
+.collection-content-div {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collection-div-btn {
+  color: white;
+  background-color: var(--button-color);
+  text-decoration: none;
+  font-size: var(--section-button-size);
+  border-radius: 3px;
+  font-family: var(--main-family);
+  padding: 0 20px;
+  
+  display: inline-block;
+  
+
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+
+.collection-div-a {
+  color: var(--button-text);
+}
+
+.heading-three {
+  color: var(--banner-text);
+  font-size: var(--h3-size);
+}
+
+.image-container-div {
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.new-in-banner > h2 {
+  background: var(--section-heading-primary);
+  padding: 10px;
+  color: var(--section-heading-text);
+  display: inline-block;
+  margin: 0;
+  font-size: var(--h2-size);
+  border-bottom: 3px solid var(--section-heading-accent);
+  margin-bottom: 1.5%;
+}
+
+.new-in-banner {
+  text-align: center;
+}
+
+/* this is css for product slider starts from here  */
+.product-slider-main-div {
+  margin-top: 1%;
+  
+}
+
+.slider-image {
+  height: auto;
+  width: 100%;
+}
+
+.main-div-inside-swiper {
+  text-align: center;
+margin-right: 5%;
+  padding: 1%;
+}
+
+.product-slider-card-title {
+  font-family: var(--main-family);
+  font-style: var(--main-style);
+  font-size: var(--font-size);
+  margin: 3px 0 0;
+}
+
+.product-slider-card-price {
+  margin: 5px 0 0;
+}
+
+.product-slider-card-variants {
+  margin: 2% 0 0;
+}
+
+.product-slider-variants-values {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.product-slider-variants-values > div {
+  font-weight: var(--main-weight);
+  min-width: 26px;
+  padding: 0 3px;
+  display: block;
+  min-height: 26px;
+  line-height: 26px;
+  font-size: 11px;
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  margin: 0 2px 5px;
+}
+
+/* this is global section css in wich we are merge two images  */
+.main-div-global-section {
+  display: flex;
+margin-top: 2%;
+  margin: "0% auto";
+  justify-content: center;
+  background: #f2eddc;
+  color: var(--secondary-button-text);
+
+}
+
+.img-div-gloabal-section {
+  width: 70%;
+  display: flex;
+}
+
+.content-div-global-section {
+  width: 30%;
+}
+
+.img-global-section {
+  height: unset;
+  width: 45%;
+  margin-bottom: 6%;
+}
+
+.content-div-global-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-div-global-section-btn {
+  color: #ffffff;
+  background-color: var(--button-color);
+  font-size: var(--section-button-size);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  /* transition: background .5s ease,color .5s ease; */
+  /* height: 30%; */
+}
+
+.img-global-section-down {
+  margin-top: 4%;
+}
+
+/* here we are providin css for spotlight section */
+.spotlight-main-div {
+  display: flex;
+  justify-content: center;
+}
+
+.div-main-spotlight {
+  margin-top: 2%;
+  text-align: center;
+  background-color: #f2eddc;
+}
+
+.spotlight-section-sub-div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.spotlight-section-heading-div {
+  margin-bottom: 1.5%;
+}
+
+.spotlight-section-img-content-div > h3 {
+  font-size: var(--h3-size);
+  font-style: var(--main-style);
+  color: var(--section-heading-text);
+}
+
+.spotlight-section-img-content-div > p {
+  /* font-size: var(--h3-size); */
+  font-style: var(--main-style);
+  color: var(--section-heading-text);
+}
+
+.spotlight-section-img-content-btn {
+  color: #ffffff;
+  background-color: var(--button-color);
+  font-size: var(--section-button-size);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  /* transition: background .5s ease,color .5s ease; */
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+/* here is the css for the blogs section in home */
+
+.blogs-section-main-div {
+  width: 90%;
+  margin: 2% auto;
+}
+
+.blogs-section-sub-div {
+  display: flex;
+  top: 2%;
+}
+
+.blog-section-blog-div {
+  padding: 0% 2% 0% 1%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.blog-section-blog-content {
+  padding: 1%;
+}
+
+.blog-section-blog-link {
+  text-decoration: none;
+  top: 1.5%;
+  font-size: var(--h3-size);
+  font-family: var(--heading-family);
+  font-weight: var(--heading-weight);
+}
+
+.blog-img {
+  height: auto;
+  width: 100%;
+  /* margin-left: 2%; */
+}
+
+.div-main-blogs {
+  text-align: center;
+}
+
+.tops-main-div {
+  text-align: center;
+}
+
+/* this is css for annoucemen bottom */
+.announcement-bar-bottom {
+  padding: 0.75% 0% 0.75% 0%;
+}
+
+/* this is css for footer  */
+
+/* this is css for social icons in footer */
+.footer-main-div {
+  padding: 3% 3% 0% 3%;
+}
+
+.social-icons-main-div {
+  text-align: center;
+}
+
+.social-icons-main-div > ul > svg {
+  margin: 0 0.75% 0 0.75%;
+}
+
+.mainfooter-main-div {
+  margin-top: 2%;
+}
+
+.main-footer-main-div-content {
+  display: flex;
+  justify-content: center;
+}
+
+li > a {
+  line-height: 24px;
+  font-size: var(--font-size);
+  font-style: var(--main-family);
+  text-decoration: none;
+}
+
+.footer-form-input {
+  padding-left: 4%;
+  height: 25%;
+  margin-bottom: 2%;
+  border: 1px ridge grey;
+  border-radius: 3px;
+}
+
+.footer-form-btn {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  font-size: var(--section-button-size);
+  border: none;
+  height: 20%;
+  width: 30%;
+  border-radius: 3px;
+}
+
+.main-footer-about-div {
+  width: 20%;
+}
+
+.footer-section-div {
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+.bottom-footer-main-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bottom-footer-copyright {
+  margin-right: 36%;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #000000;
+}
+
+.bottom-footer-payment-gateway {
+  align-self: flex-end;
+}
+
+.anchor-tag {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* this is css for collection page */
+.main-collection-main-div {
+  position: relative;
+}
+
+.collection-heading {
+  position: absolute;
+  color: var(--banner-text);
+  font-size: var(--h2-size);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* this is css for sorted items component */
+.sorted-items-main-div {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-div-sorted-items {
+  text-align: center;
+  padding: 3%;
+}
+
+.sorted-items-img-component {
+  padding: 4%;
+}
+
+.sorted-items-heading-main-div {
+  margin-top: 25%;
+  width: 70%;
+  height: auto;
+  white-space: initial;
+  padding: 2%;
+  /* color: transparent; */
+  position: absolute;
+  background: var(--background);
+  outline: 2px solid black;
+  mix-blend-mode: screen;
+  text-transform: uppercase;
+  outline-offset: -5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sorted-items-title {
+  display: block;
+}
+
+.sorted-items-counts {
+  font-size: calc(var(--font-size)-4px);
+  display: block;
+}
+
+.sorted-items-img-component {
+  position: relative;
+}
+
+/* this is css for latestdrop section in collection */
+.latestdrop-main-div {
+  text-align: center;
+}
+/* this css for news letter form */
+.news-letter-form-main-div {
+  padding: 2%;
+  background: #ded6c0;
+  text-align: center;
+}
+
+.newsletter-sub-heading {
+  line-height: 24px;
+  padding-bottom: 20px !important;
+}
+
+.newsletter-input {
+  padding-left: 2%;
+  width: 60%;
+  /* float: left; */
+  background: var(--background);
+  margin-bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  border: 1px solid var(--dotted-color);
+}
+.newsletter__submit {
+  background: var(--button-color);
+  transition: all 0.25s ease-in-out;
+  border: none;
+  width: 6%;
+  color: var(--button-text);
+  line-height: 50px;
+  border-radius: 3px;
+}
+
+/* this is css for blogs section news mainely */
+.news-section-main-div {
+  position: relative;
+}
+
+.news-section-heading-div > h2 {
+  position: absolute;
+  top: 50%;
+  color: var(--banner-text);
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-section-main-div {
+  
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.gallery-section-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gallery-section-parent-div {
+  padding: 1%;
+  position: relative;
+}
+
+.gallery-section-child-div {
+  padding: 1%;
+  background: var(--background);
+  position: absolute;
+  width: 30%;
+  height: 16%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-section-img-txt {
+  display: block;
+  padding: 2%;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
+
+/* this css is for recent blog section blogs page */
+.recent-blogs-main-div {
+  padding: 2%;
+  text-align: center;
+}
+
+.recent-blogs-parent-div {
+  padding: 2%;
+  display: flex;
+  border-bottom: 1px ridge lightgray;
+  width: 100%;
+}
+
+.recent-blogs-img {
+  height: auto;
+  width: 50%;
+  padding: 2%;
+}
+
+.recent-blog-child-div {
+  align-self: center;
+  width: 50%;
+  height: auto;
+  text-align: left;
+}
+
+.recent-blogs-read-more-btn {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  font-size: var(--section-button-size);
+  border: none;
+  line-height: 200%;
+  width: 20%;
+  border-radius: 3px;
+}
+.recent-blogs-author-details {
+  margin-top: 10%;
+  border-top: 0.5px ridge lightgrey;
+  border-bottom: 0.5px ridge lightgrey;
+  padding: 1.5% 0 1.5% 0;
+  display: flex;
+}
+
+.recent-blogs-social-icons {
+  margin-left: 25%;
+}
+
+/* this css for start shopping section */
+.start-shopping-section-main-div {
+  text-align: center;
+}
+
+/* this is css for contact page */
+.main-contact-fram-parent-div {
+  position: relative;
+}
+
+.main-contact-fram-child-div {
+  margin-left: 4%;
+  position: absolute;
+  top: 50%;
+  color: var(--announcement-text);
+}
+
+.contact-form-main-div {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+}
+.contact-form-input {
+  margin-bottom: 3%;
+  border: 0.5px ridge grey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 2%;
+}
+
+.contact-form-submit-btn {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  font-size: var(--section-button-size);
+  border: none;
+  line-height: 200%;
+  width: 15%;
+  border-radius: 3px;
+}
+.contact-form {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.contact-form-sub-div-notice {
+  padding: 2%;
+}
+
+.contact-form-div {
+  padding: 2%;
+}
+
+/* this css for features */
+.features-notice-main-div {
+  padding: 6%;
+}
+.features-notice-content-div {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.features-notice-content-div > p {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.theme_list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 1%;
+}
+
+.span-5 {
+  padding-right: 2%;
+}
+.span-7 {
+  padding-right: 2%;
+  padding-bottom: 6%;
+}
+
+.span-7 > ul {
+  padding-left: 4%;
+}
+.span-7 > ul > li {
+  list-style: disc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.features-fram-parent-div {
+  position: relative;
+}
+
+.features-fram-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.features-fram-child-div {
+  color: var(--banner-text);
+  margin-left: 2%;
+  position: absolute;
+  top: 50%;
+}
+
+/* this css for FAQ page */
+.faq-section-main-div {
+  padding: 3%;
+  text-align: center;
+}
+
+.faq-section-compliment {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.faq-fram-main-div {
+  position: relative;
+}
+
+.faq-fram-child-div {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  padding-left: 2%;
+}
+
+.faq-section-qna {
+  padding: 0 3% 0 3%;
+}
+.faq-section-qna-div {
+  padding: 0 18% 0 18%;
+}
+.faq-section-question {
+  padding: 2% 0 2% 0;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: calc(var(--font-size)+6px);
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 2px;
+  border-bottom: 1px ridge grey;
+}
+
+.dropDownArrow {
+  margin-right: auto;
+  transform: rotate(0deg);
+  transition: transform 0.35s ease;
+}
+
+/* this css for new arrivals page */
+
+.new-arrivals-main-div {
+  position: relative;
+}
+
+.new-arrivals-child-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1%;
+  background: #39393978;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  color: var(--banner-text);
+}
+
+/* this is css for product page */
+/* .product-page-main-div {
+  padding: 1% 6% 1% 6%;
+} */
+.product-page-section {
+  padding: 1%;
+}
+
+.product-count {
+  font-size: var(--font-size);
+  font-style: var(--main-style);
+  font-family: var(--main-family);
+  font-weight: var(--main-weight);
+}
+.product-page-navigation-main-div > p {
+  font-size: var(--font-size);
+  font-style: var(--main-style);
+  font-family: var(--main-family);
+  font-weight: var(--main-weight);
+}
+.product-page-sidebar-container-div {
+  display: flex;
+  width: 100%;
+}
+
+.product-page-sidebar-div {
+  width: 100%;
+  padding: 3% 0;
+}
+
+.product-page-container {
+  padding: 3% 0;
+}
+
+.product-page-control-bar-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product-page-filter-div {
+  padding: 1%;
+}
+
+.product-page-sorting-div {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-page-select-div {
+  height: 50px !important;
+  align-items: center;
+  font-size: var(--font-size);
+  font-style: var(--main-style);
+  font-family: var(--main-family);
+  font-weight: var(--main-weight);
+}
+/* .product-count{
+  margin-right: 1%;
+} */
+.product-page-filter-button {
+  border: 1px solid var(--dotted-color);
+  height: 50px !important;
+  display: inline-flex;
+  background: none;
+  gap: 6px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.product-page-filter-button > p {
+  font-size: var(--font-size);
+}
+/* this is css for the sidebar   */
+.sidebar-btn {
+  padding: 2% 0 2% 0;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: calc(var(--font-size)+6px);
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 2px;
+  border-bottom: 1px ridge grey;
+}
+
+.new-arrivals-price-main-div {
+  padding: 3% 4%;
+  text-align: center;
+}
+.new-arrivals-price-input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-arrivals-price-input {
+  margin: 5%;
+  width: 24%;
+  padding: 3%;
+}
+.container {
+  padding: 5%;
+}
+
+.swatch{
+  font-size: 14px;
+  font-weight: 100;
+  margin-left: 5px;
+}
+/* this is css for availability component */
+.new-arrivals-availability-main-div {
+  padding: 3% 4%;
+  text-align: left;
+}
+
+/* this is css for new arrivals container */
+.new-arrivals-container-main-div {
+  width: 230%;
+  padding: 1%;
+}
+
+.new-arrivals-container-sub-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.new-arrivals-container-product-div {
+  width: 95%;
+}
+
+/* this is the css for product page */
+.product-page-sub-div {
+  display: flex;
+}
+
+.product-page-img-div {
+  width: 50%;
+}
+
+.product-page-content-div {
+  padding: 1% 2%;
+  width: 50%;
+}
+
+.product-page-social-icons {
+  text-align: end;
+}
+
+.product-page-section>ul>li{
+  list-style: disc inside;
+  padding: 1% 0%;
+}
+
+.product-page-section>ul{
+  padding: 2% 0%;
+}
+.rte {
+  display: flex;
+  align-items: center;
+}
+
+/* @keyframes cart-animation {
+  from{width: 0%;}
+  to{width:35%;}
+} */
+
+.cart-main-div{
+  width: 35%;
+  transition: width 0.55s ease-in;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0%;
+  animation: cart-animation 0.55s ease-in forwards;
+}
+
+@keyframes cart-animation {
+  from{right:-35%;}
+  to{right:0%;}
+}
+
+
+/* css for login */
+.login-form {
+  width: 300px;
+  margin: 5% auto;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  margin-top: 0;
+}
+
+.login-form label {
+  margin-top: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.login-form .forgot-password {
+  align-self: flex-end;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+.login-form button[type="submit"] {
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 3px;
+  background-color:var(--button-color);
+  color:var(--button-text);
+  border: none;
+}
+
+.login-form .create-account {
+  align-self: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form .create-account a {
+  text-decoration: none;
+  color: #000000;
+}
+.create-account-btn{
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 3px;
+  background-color:var(--secondary-button-color);
+  color:var(--button-color);
+  border: none;
+}
+
+/* create account css */
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.form-group button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}

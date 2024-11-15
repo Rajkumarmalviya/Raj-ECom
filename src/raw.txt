@@ -1,0 +1,171 @@
+routing
+ 
+ {/* <BrowserRouter>
+       <div className="routing">
+        <Topbar products={product} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Section products={product} blogs={blogs} />}
+          />
+          <Route path="collections" element={<RootCollection />}>
+            <Route
+              path=""
+              element={
+                <Collections
+                  products={product}
+                  collection={collection}
+                  pages={page}
+                />
+              }
+            />
+            <Route
+              path="tops"
+              element={
+                <NewArrivals
+                  collection={collection}
+                  products={tops}
+                  path="new"
+                />
+              }
+            />
+            <Route
+              path="dresses"
+              element={
+                <NewArrivals collection={collection} products={dresses} />
+              }
+            />
+
+            <Route
+              path="rompers"
+              element={
+                <NewArrivals
+                  collection={collection}
+                  products={rompers}
+                  path="new"
+                />
+              }
+            />
+            <Route path="new-arrivals" element={<RootProducts />}>
+              <Route
+                path=""
+                element={
+                  <NewArrivals collection={collection} products={product} />
+                }
+              />
+              <Route
+                path="products/:id"
+                element={
+                  <ProductPage
+                    pages={page}
+                    collection={collection}
+                    products={product}
+                  />
+                }
+              />
+            </Route>
+          </Route>
+          <Route
+            path="blogs/"
+            element={<Blogs pages={page} products={product} path={"blogs/"} />}
+          />
+          <Route
+            path="contacts/"
+            element={<Contacts pages={page} path={"contacts/"} />}
+          />
+          <Route
+            path="features/"
+            element={
+              <Features pages={page} products={product} path="features/" />
+            }
+          />
+          <Route path="faqs/" element={<Faqs pages={page} path="faqs/" />} />
+        </Routes>
+        <Footer />
+      </div> 
+    </BrowserRouter>*/}
+
+
+
+
+    // these are the states(variables) that are used to store fetched data
+  // const [product, updateProducts] = useState(null);
+  // const [collection, updateCollection] = useState([]);
+  // const [page, updatePages] = useState([]);
+  // const [tops, updateTops] = useState([]);
+  // const [dresses, updateDresses] = useState([]);
+  // const [rompers, updateRompers] = useState([]);
+  // these is the function to fetch and store data
+
+  // useEffect(() => {
+  //   axios.get("https://mr-parker.myshopify.com/products.json").then((res) => {
+  //     updateProducts(res.data.products);
+  //     console.log(res.data.products);
+  //   });
+
+  //   axios.get("https://mr-parker.myshopify.com/pages.json").then((res) => {
+  //     updatePages(res.data.pages);
+  //     console.log(res.data.pages);
+  //   });
+
+  //   axios
+  //     .get("https://mr-parker.myshopify.com/collections.json")
+  //     .then((res) => {
+  //       updateCollection(res.data.collections);
+  //       console.log(res.data.collections);
+  //     });
+
+  //   axios
+  //     .get("https://mr-parker.myshopify.com/collections/tops/products.json")
+  //     .then((res) => {
+  //       updateTops(res.data.products);
+  //     });
+
+  //   axios
+  //     .get("https://mr-parker.myshopify.com/collections/dresses/products.json")
+  //     .then((res) => {
+  //       updateDresses(res.data.products);
+  //     });
+
+  //   axios
+  //     .get("https://mr-parker.myshopify.com/collections/rompers/products.json")
+  //     .then((res) => {
+  //       updateRompers(res.data.products);
+  //     });
+  // }, []);
+
+  // const fetchDataOne = async () => {
+  //   const response = await fetch(
+  //     "https://mr-parker.myshopify.com/products.json"
+  //   );
+  //   const products = await response.json();
+  //   updateProducts(products);
+  // };
+
+  // const fetchDataTwo = async () => {
+  //   const response = await fetch("https://mr-parker.myshopify.com/pages.json");
+  //   const pages = await response.json();
+  //   updatePages(pages);
+  // };
+
+  // const fetchDataThree = async () => {
+  //   const response = await fetch(
+  //     "https://mr-parker.myshopify.com/collections.json"
+  //   );
+  //   const cltn = await response.json;
+  //   updateCollection(cltn);
+  // };
+  // useEffect(() => {
+  //   fetchDataOne();
+  //   fetchDataTwo();
+  //   fetchDataThree();
+  // }, []);
+
+  // let dresses = products;
+  // let rompers = products;
+  // let tops = products;
+  // dresses = dresses.filter((dress) => dress.product_type === "Dress");
+  // rompers = rompers.filter((romper) => romper.product_type === "Romper");
+  // tops = tops.filter((top) => top.product_type === "Top");
+  // filtering data catagory wise
+  // if (!product) return null;

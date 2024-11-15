@@ -1,0 +1,15 @@
+.disclosure-list{
+    background-color: var(--announcement-background);
+    border: 1px solid var(--announcement-background);
+    top: 115%;
+    left: -30px;
+    padding: 10px 0;
+    position: absolute;
+    display: none;
+    min-height: 92px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 11;
+    line-height: 20px;
+    text-align: left;
+}
